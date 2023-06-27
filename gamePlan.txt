@@ -1,0 +1,73 @@
+How to play
+Rock smashes scissors: Rock wins
+Scissors cut papper: Scissor wins
+Papper covers rock: Papper wins
+
+
+programme steps:
+1. Get input from computer(Computer choice)
+    import random( *to randomize the computer choice*)
+    function getComputerChoice(str){
+        math.random(str)
+    } 
+    let str = ['paper','rock','scissors']
+    console.log(getComputerChoice(str))
+
+2. Get input from user( User choice)
+    function userChoice(){
+        if(choice === 1){
+            return 'scissors'
+        }else if (choice === 2){
+            return'Paper'
+        }else {
+        return 'rock'
+        }
+    }
+    let choice = prompt("please enter you chocie: ")
+    console.log(userChoice())
+
+3. Compare the choices(if statement)
+    function  playRound(usercChoice,computerChoice){
+    if (computerChoice === "rock" && usercChoice=== "paper"){
+        return 'Paper covers Rock\n \
+                      You Win'
+        }else if (computerChoice  === "scissors" && uusercChoice === "rock"){
+            return 'Rock smashes Scissors \n \
+                      You Win'
+        }
+    }
+4. Declare the winner
+
+
+
+
+
+
+
+
+
+
+else if (computerGuess === "paper" && userGuess === "rock") {
+        console.log('Paper covers Rock\n \
+                     You Lose');
+    }else if (computerGuess === "rock" && userGuess=== "paper") {
+        console.log('Paper covers Rock\n \
+                     You Win');
+    } else if (computerGuess === "rock" && userGuess === "scissors") {
+        console.log('Rock smashes Scissors\n \
+                        You Lose');
+    }else if (computerGuess === "scissors" && userGuess === "rock") {
+        console.log('Rock smashes Scissors\n \
+                     You Win');
+    } else if (computerGuess === "scissors" && userGuess === "paper") {
+        console.log('Scissors cut Paper\n \
+                     You Lose');
+    }else if (computerGuess === "paper" && userGuess === "scissors") {
+        console.log('Scissors cut Paper\n \
+                     You Win'); 
+    } 
+
+
+
+
+ 
