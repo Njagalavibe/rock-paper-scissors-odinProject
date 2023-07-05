@@ -27,15 +27,18 @@ programme steps:
     console.log(userChoice())
 
 3. Compare the choices(if statement)
-    function  playRound(usercChoice,computerChoice){
-    if (computerChoice === "rock" && usercChoice=== "paper"){
-        return 'Paper covers Rock\n \
-                      You Win'
-        }else if (computerChoice  === "scissors" && uusercChoice === "rock"){
-            return 'Rock smashes Scissors \n \
-                      You Win'
+    function  playRound(userGuess, computerGuess){
+    if (userGuess === computerGuess ){
+        return "It's a Tie"; 
+    } 
+    if (userGuess === "rock"){
+        if (computerGuess === "paper"){
+            return "You Lose";
+        }else{
+            return "You Win";
         }
     }
+}   
 4. Declare the winner
 
 
@@ -46,26 +49,6 @@ programme steps:
 
 
 
-
-else if (computerGuess === "paper" && userGuess === "rock") {
-        console.log('Paper covers Rock\n \
-                     You Lose');
-    }else if (computerGuess === "rock" && userGuess=== "paper") {
-        console.log('Paper covers Rock\n \
-                     You Win');
-    } else if (computerGuess === "rock" && userGuess === "scissors") {
-        console.log('Rock smashes Scissors\n \
-                        You Lose');
-    }else if (computerGuess === "scissors" && userGuess === "rock") {
-        console.log('Rock smashes Scissors\n \
-                     You Win');
-    } else if (computerGuess === "scissors" && userGuess === "paper") {
-        console.log('Scissors cut Paper\n \
-                     You Lose');
-    }else if (computerGuess === "paper" && userGuess === "scissors") {
-        console.log('Scissors cut Paper\n \
-                     You Win'); 
-    } 
 
 
 
