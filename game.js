@@ -1,16 +1,9 @@
-const prompt = require("prompt-sync")({ sigint: true });
-let choices = {
-    paper: "paper",
-    scissors: "scissors",
-    rock: "rock"
-}
-
-
-
+/*const prompt = require("prompt-sync")({ sigint: true });*/
+let choices = ["paper","scissors","rock"]
 /*Get computer choice*/
 function getComputerChoice(choices) {
-    let computerChoice = Object.keys(choices);
-    let randomComputerChoice = computerChoice[Math.floor(Math.random() * computerChoice.length)];
+   
+    let randomComputerChoice = choices[Math.floor(Math.random() * choices.length)];
     return randomComputerChoice;
 }
 getComputerChoice(choices);
@@ -54,4 +47,7 @@ function playRound(userGuess, computerGuess) {
 }
 let userGuess = userChoice();
 let computerGuess = getComputerChoice(choices);
-console.log(playRound(userGuess, computerGuess));          
+console.log(playRound(userGuess, computerGuess));  
+
+
+export {choices,getComputerChoice,userChoice,showChoices,playRound};
