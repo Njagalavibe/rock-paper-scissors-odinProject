@@ -1,4 +1,5 @@
-const prompt = require("prompt-sync")({ sigint: true });
+
+/*const prompt = require("prompt-sync")({ sigint: true });*/
 let choices = ["paper","scissors","rock"]
 /*Get computer choice*/
 function getComputerChoice(choices) {
@@ -48,21 +49,11 @@ function playRound(userGuess, computerGuess) {
 }
 let userGuess = userChoice();
 let computerGuess = getComputerChoice(choices);
-console.log(playRound(userGuess, computerGuess)); 
+
+console.log(playRound(userGuess, computerGuess));  
 
 
-//Will add playing more rounds(5 rounds each stake) after i work on the ui as i consider that a more excitng chaalenge
-/*
-function fiveRounds(){
-    computerScore=0;
-    playerScore=0;
-    for (let round=0; round<=5;round++){
-        playRound(userGuess, computerGuess) 
-    }
-    
-}
-console.log(fiveRounds())
-*/
+
 
 
 

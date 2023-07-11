@@ -1,0 +1,78 @@
+* {}
+
+body {
+    background-color: #27374D;
+}
+
+.container {
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.game-name {
+    font-size: 40px;
+    color: #FAF0D7;
+    font-family: 'Aboreto', cursive;
+
+
+}
+
+.container-small {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-family: 'Aboreto', cursive;
+}
+
+.game-players {
+    font-size: 20px;
+    color: #FAF0D7;
+}
+
+span {
+    color: #FF4273;
+}
+
+.result {
+    margin: 20px 0px 20px 150px;
+    font-size: 28px;
+    color: #FAF0D7;
+}
+
+#choice-buttons {
+    margin-top: 50px;
+    position: absolute;
+    top: 100%;
+    left: 2%;
+
+}
+
+.playerchoices {
+    padding: 12px 25px 12px 25px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 2px solid#FAF0D7;
+    cursor: pointer;
+    transition: .2s ease-in-out 0s;
+    font-family: 'Roboto Slab', serif;
+}
+
+.playerchoices:hover {
+    transform: scale(1.25);
+    color: #FAF0D7;
+    background-color: #FF4273;
+    border: 2px solid#FF4273;
+}
+
+.result-decision {
+    color: #FF4273;
+    font-family: 'Freehand', cursive;
+    font-size: 30px;
+    text-align:center;
+    opacity: .7;
+}
