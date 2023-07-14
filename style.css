@@ -37,10 +37,11 @@ span {
     color: #FF4273;
 }
 
-.result {
-    margin: 20px 0px 20px 150px;
+#result {
+    margin: 20px 0px 20px 0px;
     font-size: 28px;
     color: #FAF0D7;
+    text-align: center;
 }
 
 #choice-buttons {
